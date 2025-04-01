@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervical Screening Matters</title>
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background: var(--primary-color);
+            padding: 1rem;
+            color: var(--white);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 900px) {
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                margin-top: 1rem;
+                justify-content: flex-start;
+                width: 100%;
+            }
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: #f8f9fa;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 2rem auto;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .info-section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            color: #444;
+        }
+
+        p {
+            color: #444;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo" style="display: inline-block;">Cervical Screening Matters<br><span style="font-size: 0.7rem; font-weight: normal; display: block;">By Charles Wiewiora & Hardik Basnet</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#importance">Importance</a>
+                <a href="#myths">Myths</a>
+                <a href="#common-questions">Common Questions</a>
+                <a href="#find-clinics">Find a Clinic</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Don't gamble with your lives</h1>
+        <p>Cervical screening saves lives. Learn about this quick test that helps prevent cancer before it starts.</p>
+        <a href="#about" class="btn btn-primary">Learn more</a><a href="#find-clinics" class="btn btn-primary">Find a clinic</a>
+    </section>
+
+    <div class="stats">
+        <div class="stat-item">
+            <div class="stat-number">99.8%</div>
+            <p>of cervical cancer cases are preventable with screening</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">5 Minutes</div>
+            <p>is all it takes for a screening test that could save your life</p>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">3 Years</div>
+            <p>is the recommended interval between screenings</p>
+        </div>
+    </div>
+
+    <div id="about" class="info-section">
+        <h1 style="color: var(--primary-color); text-align: center; margin-bottom: 1.5rem;">About Cervical Screening</h1>
+        <h2>What is cervical screening?</h2>
+        <p>Cervical screening (previously known as a "smear test") is a free health test available on the NHS that helps prevent cervical cancer. It checks for a virus called high-risk human papillomavirus (HPV) and, if found, examines the cells for any changes.</p>
+        <p>It's not a test for cancer, but rather a preventative measure that helps identify any potential issues before they develop into cancer.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Who should get screened?</h2>
+        <ul>
+            <li>All women and people with a cervix aged 25 to 64</li>
+            <li>Ages 25-49: Every 3 years</li>
+            <li>Ages 50-64: Every 5 years</li>
+            <li>You'll receive an invitation letter when it's time for your screening</li>
+        </ul>
+    </div>
+
+    <div class="info-section">
+        <h2>What happens during the screening?</h2>
+        <div class="stats" style="margin-top: 2rem;">
+            <div class="stat-item" style="text-align: center;">
+                <div style="font-size: 2rem; color: var(--primary-color);">1</div>
+                <h3>Before your appointment</h3>
+                <p>You'll be asked to undress from the waist down and lie on a bed with a sheet over you.</p>
+            </div>
+            <div class="stat-item" style="text-align: center;">
+                <div style="font-size: 2rem; color: var(--primary-color);">2</div>
+                <h3>During the test</h3>
+                <p>A nurse will gently insert a speculum and use a small soft brush to take a sample from your cervix.</p>
+            </div>
+            <div class="stat-item" style="text-align: center;">
+                <div style="font-size: 2rem; color: var(--primary-color);">3</div>
+                <h3>After the test</h3>
+                <p>Your sample is sent to a lab and you'll receive results by letter, usually within 2 weeks.</p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 2rem;">The test should take less than 5 minutes. The nurse is there to help you feel comfortable and answer any questions.</p>
+        <p style="text-align: center;">You can request a female nurse if that makes you more comfortable. Many clinics also offer evening and weekend appointments.</p>
+    </div>
+
+    <div class="info-section">
+        <h1 id="importance" style="color: var(--primary-color); text-align: center; margin-bottom: 1.5rem;">Why Screening Matters</h1>
+        <h2>The facts about cervical cancer</h2>
+
+        <div style="margin: 2rem 0;">
+            <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                <div style="background: var(--primary-color); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                    <span style="color: white; font-size: 20px;">🔍</span>
+                </div>
+                <div>
+                    <h3 style="margin: 0;">Early detection saves lives</h3>
+                    <p style="margin: 0.5rem 0;">When detected early through screening, cervical cancer is highly treatable with a 5-year survival rate of over 90%.</p>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                <div style="background: var(--primary-color); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                    <span style="color: white; font-size: 20px;">🦠</span>
+                </div>
+                <div>
+                    <h3 style="margin: 0;">HPV and cervical cancer</h3>
+                    <p style="margin: 0.5rem 0;">Nearly all cervical cancers are caused by HPV. Screening identifies high-risk HPV infections before they cause cancer.</p>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+                <div style="background: var(--primary-color); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                    <span style="color: white; font-size: 20px;">⏰</span>
+                </div>
+                <div>
+                    <h3 style="margin: 0;">Preventing cancer before it starts</h3>
+                    <p style="margin: 0.5rem 0;">Cervical screening can detect abnormal cell changes years before cancer develops, allowing for simple treatment.</p>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start;">
+                <div style="background: var(--primary-color); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                    <span style="color: white; font-size: 20px;">📊</span>
+                </div>
+                <div>
+                    <h3 style="margin: 0;">The UK success story</h3>
+                    <p style="margin: 0.5rem 0;">Since the NHS screening programme began, cervical cancer cases have decreased by about 7% each year.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #f5f5f5; padding: 2rem; margin: 2rem 0; text-align: center; font-style: italic; border-radius: 8px;">
+            <p style="font-size: 1.2rem; margin-bottom: 1rem;">"Cervical screening prevents 70% of cervical cancer deaths. Screening uptake has dropped in recent years – attending your appointment when invited could save your life."</p>
+            <p style="font-weight: bold;">- NHS Cervical Screening Programme</p>
+        </div>
+    </div>
+</body>
+
+    <div class="info-section">
+        <h1 id="myths" style="color: var(--primary-color); text-align: center; margin-bottom: 1.5rem;">Common Myths & Facts</h1>
+
+        <div class="myths-container">
+            <details class="myth-item">
+                <summary>"I don't need screening if I've had the HPV vaccine"</summary>
+                <div class="myth-content">
+                    <p><span class="myth-label">MYTH:</span> The HPV vaccine provides complete protection against cervical cancer.</p>
+                    <p><span class="fact-label">FACT:</span> While the HPV vaccine provides excellent protection against the most common cancer-causing HPV types, it doesn't protect against all types. Regular screening is still essential even if you've been vaccinated.</p>
+                </div>
+            </details>
+
+            <details class="myth-item">
+                <summary>"Cervical screening is painful"</summary>
+                <div class="myth-content">
+                    <p><span class="myth-label">MYTH:</span> Cervical screening is always painful.</p>
+                    <p><span class="fact-label">FACT:</span> Most people find screening uncomfortable but not painful. The procedure takes just a few minutes. You can ask for a smaller speculum, and talk to your nurse about ways to make it more comfortable.</p>
+                </div>
+            </details>
+
+            <details class="myth-item">
+                <summary>"I don't need screening if I'm not sexually active"</summary>
+                <div class="myth-content">
+                    <p><span class="myth-label">MYTH:</span> Screening is only needed if you're currently sexually active.</p>
+                    <p><span class="fact-label">FACT:</span> If you've ever been sexually active, you should attend screening. HPV can remain dormant for many years before causing cell changes. Even if you're no longer sexually active or have had the same partner for years, screening is still important.</p>
+                </div>
+            </details>
+
+            <details class="myth-item">
+                <summary>"A positive HPV test means I have cancer"</summary>
+                <div class="myth-content">
+                    <p><span class="myth-label">MYTH:</span> Testing positive for HPV means you have cancer or will definitely develop it.</p>
+                    <p><span class="fact-label">FACT:</span> HPV is very common, and most infections clear on their own. A positive HPV test means you have the virus that can sometimes cause cell changes. These changes take years to develop into cancer, which is why regular screening is so effective at prevention.</p>
+                </div>
+            </details>
+
+            <details class="myth-item">
+                <summary>"I'm embarrassed about my body"</summary>
+                <div class="myth-content">
+                    <p><span class="myth-label">MYTH:</span> Nurses judge your body during cervical screening.</p>
+                    <p><span class="fact-label">FACT:</span> Healthcare professionals perform many screenings every day and are focused only on your health. They've seen all body types and are trained to make you feel comfortable. You can request a female nurse, bring someone with you for support, or wear a skirt that can stay on during the procedure.</p>
+                </div>
+            </details>
+        </div>
+
+        <style>
+            .myths-container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .myth-item {
+                margin-bottom: 1rem;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            .myth-item summary {
+                padding: 1rem;
+                cursor: pointer;
+                background-color: #f8f9fa;
+                font-weight: bold;
+                transition: background-color 0.2s;
+            }
+
+            .myth-item summary:hover {
+                background-color: #e9ecef;
+            }
+
+            .myth-content {
+                padding: 1rem;
+                background-color: #fff;
+            }
+
+            .myth-label {
+                color: #dc3545;
+                font-weight: bold;
+            }
+
+            .fact-label {
+                color: #28a745;
+                font-weight: bold;
+            }
+        </style>
+    </div>
+
+    <div class="info-section">
+        <h1 id="find-clinics" style="color: var(--primary-color); text-align: center; margin-bottom: 1.5rem;">Find Screening Locations</h1>
+        <p>(Remember to phone to confirm they have screenings)</p>
+        <p>Triangles = clinics</p>
+        <p>🏥 = Hospitals</p>
+        <p>You may have to zoom in to see clinics</p>
+        <div class="search-container" style="max-width: 600px; margin: 0 auto;">
+            <input type="text" id="postcode" placeholder="Enter your postcode" style="width: 70%; padding: 10px; margin-right: 10px;">
+            <button onclick="searchClinics()" class="btn btn-primary">Search</button>
+        </div>
+        <div id="map" style="height: 500px; width: 100%; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
+    </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script>
+        let map;
+        let markers = [];
+
+        // Initialize map only if it hasn't been initialized yet
+        function initMap() {
+            if (!map) {
+                map = L.map('map').setView([51.5074, -0.1278], 13); // London center
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+            }
+        }
+
+        function searchClinics() {
+            const postcode = document.getElementById('postcode').value;
+
+            // Clear existing markers
+            markers.forEach(marker => marker.remove());
+            markers = [];
+
+
+            // Use Nominatim for geocoding (free)
+            fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(postcode)},UK`)
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.length) {
+                        alert('Please enter a valid UK postcode');
+                        return;
+                    }
+
+                    const location = data[0];
+                    map.setView([location.lat, location.lon], 12);
+
+                    // Add a marker for the postcode
+                    const marker = L.marker([location.lat, location.lon])
+                        .bindPopup(`<b>Postcode:</b> ${postcode}`)
+                        .addTo(map);
+                    markers.push(marker);
+
+                    // Search for nearby clinics using Overpass API
+                    const radius = 15000; // 15km radius
+                    const query = `
+                        [out:json][timeout:25];
+                        (
+                            node["healthcare"="hospital"](around:${radius},${location.lat},${location.lon});
+                            node["amenity"="hospital"](around:${radius},${location.lat},${location.lon});
+                            node["healthcare"="clinic"](around:${radius},${location.lat},${location.lon});
+                            node["healthcare"="centre"](around:${radius},${location.lat},${location.lon});
+                            node["healthcare:speciality"="gynaecology"](around:${radius},${location.lat},${location.lon});
+                        );
+                        out body;
+                    `;
+
+                    fetch(`https://overpass-api.de/api/interpreter`, {
+                        method: 'POST',
+                        body: query
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        data.elements.forEach(element => {
+                            const clinicMarker = L.marker([element.lat, element.lon], {
+                                icon: L.divIcon({
+                                    className: 'clinic-marker',
+                                    html: '<span style="font-size: 25px;">🏥</span>',
+                                    iconSize: [40, 40]
+                                })
+                            })
+                            .bindPopup(`
+                                <b>${element.tags.name || 'Medical Facility'}</b><br>
+                                <i>${element.tags.healthcare || element.tags.amenity}</i><br>
+                                ${element.tags.addr_street || ''} ${element.tags.addr_housenumber || ''}<br>
+                                ${element.tags.phone || ''}<br>
+                                <small>Please call to confirm cervical screening services</small>
+                            `)
+                            .addTo(map);
+                            markers.push(clinicMarker);
+                        });
+                    });
+                });
+        }
+    </script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        initMap();
+    </script>
+
+    <div class="info-section">
+        <h1 id="common-questions" style="color: var(--primary-color); text-align: center; margin-bottom: 1.5rem;">Common Questions</h1>
+        <p style="text-align: center; margin-bottom: 2rem;">Find answers to frequently asked questions about cervical cancer screening.</p>
+
+        <div class="faq-container">
+            <details class="faq-item">
+                <summary>What is cervical cancer screening?</summary>
+                <div class="faq-content">
+                    <p>Cervical cancer screening is a way to detect abnormal cells on the cervix that could later develop into cervical cancer. In the UK, screening includes:</p>
+                    <ul>
+                        <li>Primary HPV testing to check for high-risk types of human papillomavirus (HPV)</li>
+                        <li>Cytology (looking at the cells) if HPV is found</li>
+                    </ul>
+                    <p>This is sometimes referred to as "cervical smear" or "smear test", though the testing methods have evolved over time.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Why do I need to get screened for cervical cancer?</summary>
+                <div class="faq-content">
+                    <p>Cervical screening is important because it can:</p>
+                    <ul>
+                        <li>Detect HPV infections and cell changes before they become cancerous</li>
+                        <li>Prevent cancer from developing</li>
+                        <li>Find cancer at an early stage when it's easier to treat</li>
+                        <li>Save lives - regular screening prevents up to 70% of cervical cancer deaths</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>At what age should I start cervical cancer screening?</summary>
+                <div class="faq-content">
+                    <p>In the UK, the NHS Cervical Screening Programme invites:</p>
+                    <ul>
+                        <li>Women and people with a cervix aged 25 to 64 for regular screening</li>
+                        <li>First invitations are sent at age 25</li>
+                        <li>Those aged 65+ are only invited if they haven't been screened since age 50 or have had recent abnormal results</li>
+                    </ul>
+                    <p>The age range is based on evidence about when screening is most effective. People under 25 are not routinely screened because cervical cancer is very rare in this age group, and cell changes are common and usually resolve on their own.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How often do I need to get screened for cervical cancer?</summary>
+                <div class="faq-content">
+                    <p>The NHS recommends different screening frequencies based on age:</p>
+                    <ul>
+                        <li><strong>Ages 25-49:</strong> Every 3 years</li>
+                        <li><strong>Ages 50-64:</strong> Every 5 years</li>
+                    </ul>
+                    <p>If you have had previous abnormal results or are at higher risk, you may be invited more frequently. Always follow the guidance in your screening invitation letter.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What is the difference between a Pap smear and an HPV test?</summary>
+                <div class="faq-content">
+                    <p>The two tests examine cells collected from the cervix in different ways:</p>
+                    <ul>
+                        <li><strong>Pap smear (cytology):</strong> Examines cervical cells under a microscope to look for abnormal changes that might be precancerous or cancerous.</li>
+                        <li><strong>HPV test:</strong> Looks for the presence of high-risk types of HPV that can cause cervical cancer.</li>
+                    </ul>
+                    <p>In the UK, the NHS now uses HPV testing as the primary screening method. If HPV is found, the same sample is then checked for abnormal cells (cytology).</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What happens during a cervical cancer screening test?</summary>
+                <div class="faq-content">
+                    <p>During a cervical screening appointment:</p>
+                    <ul>
+                        <li>A trained healthcare professional (usually a practice nurse) will explain the procedure</li>
+                        <li>You'll undress from the waist down and lie on an examination couch with your knees bent and apart (a paper sheet can cover your lower body)</li>
+                        <li>The nurse will gently insert a speculum (a smooth, tube-shaped tool) into your vagina to hold it open</li>
+                        <li>A small, soft brush is used to take a sample of cells from your cervix</li>
+                        <li>The sample is sent to a laboratory for testing</li>
+                    </ul>
+                    <p>The test usually takes less than 5 minutes, though the entire appointment may last around 10-15 minutes.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What are the risks or discomforts of cervical cancer screening?</summary>
+                <div class="faq-content">
+                    <p>Cervical screening is generally safe, but may involve:</p>
+                    <ul>
+                        <li><strong>Discomfort:</strong> Some people experience mild discomfort, cramping, or pressure during the procedure</li>
+                        <li><strong>Light bleeding:</strong> Spotting or light bleeding for a day or two after screening is normal</li>
+                        <li><strong>Anxiety:</strong> Some people find the procedure embarrassing or stressful</li>
+                    </ul>
+                    <p>You can ask the healthcare provider to:</p>
+                    <ul>
+                        <li>Use a smaller speculum</li>
+                        <li>Take more time</li>
+                        <li>Allow you to insert the speculum yourself</li>
+                        <li>Provide additional support if you have experienced trauma or have specific concerns</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Are there any signs or symptoms of cervical cancer that I should watch for?</summary>
+                <div class="faq-content">
+                    <p>Common symptoms of cervical cancer may include:</p>
+                    <ul>
+                        <li>Unusual vaginal bleeding (between periods, after sex, or after menopause)</li>
+                        <li>Changes to vaginal discharge (heavier, different color/smell)</li>
+                        <li>Pain or discomfort during sex</li>
+                        <li>Unexplained lower back or pelvic pain</li>
+                        <li>Unexplained fatigue</li>
+                    </ul>
+                    <p><strong>Important:</strong> These symptoms can be caused by many conditions other than cancer. However, if you experience any of these symptoms, contact your GP for advice - don't wait for your next screening appointment.</p>
+                </div>
+            </details>
+        </div>
+
+        <style>
+            .faq-container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .faq-item {
+                margin-bottom: 1rem;
+                border: 1px solid #e0e0e0;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            .faq-item summary {
+                padding: 1rem;
+                cursor: pointer;
+                background-color: #f8f9fa;
+                font-weight: bold;
+                transition: background-color 0.2s;
+            }
+
+            .faq-item summary:hover {
+                background-color: #e9ecef;
+            }
+
+            .faq-content {
+                padding: 1rem;
+                background-color: #fff;
+            }
+
+            .faq-content ul {
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .faq-content li {
+                margin-bottom: 0.5rem;
+            }
+        </style>
+    </div>
+</body>
+</html>
