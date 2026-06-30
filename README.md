@@ -1,2 +1,1 @@
-Uhhhhh, this was for a school project, dont ask
-:)
+For a school prodject for the Bronze CREST awards
